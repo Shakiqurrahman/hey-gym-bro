@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign up</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navbar  -->
+    <nav class="nav">
+      <div class="container nav_wrapper">
+        <!-- logo -->
+        <div class="">
+          <img src="../assets/logo.png" alt="" style="width: 100px" />
+        </div>
+
+        <!-- menu  -->
+        <div class="menu">
+          <p>home</p>
+          <img src="../assets/menu.png" alt="" style="width: 30px" />
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <form class="form">
+        <div class="btn_group">
+          <button class="btn">login</button>
+          <button class="btn sign_up">sign up</button>
+        </div>
+
+        <div class="input_box" style="padding:1rem">
+          <div class="input_wrapper">
+            <div class="input_group">
+              <label for="name">First name</label>
+              <input type="text" placeholder="First name" class="input_field" />
+            </div>
+
+            <div class="input_group">
+              <label for="name">First name</label>
+              <input type="text" placeholder="First name" class="input_field" />
+            </div>
+          </div>
+
+          <div class="input_group">
+            <label for="name">Gym name</label>
+            <input type="text" placeholder="Gym name" class="input_field" />
+          </div>
+
+          <div class="input_group">
+            <label for="name">Email</label>
+            <input
+              type="email"
+              placeholder="Email address"
+              class="input_field"
+            />
+          </div>
+
+          <div class="content">
+            <p>
+              At HeyGymbo we never sell or share any personal data that could
+              identify anyone as an individual or as an identifiable person.
+            </p>
+
+            <div class="checkbox_container">
+              <label for="checkbox" class="checkbox_wrapper">
+                <input type="checkbox" id="checkbox" />
+                <span>I am not a robot</span>
+              </label>
+              <label for="agree" class="checkbox_wrapper">
+                <input type="checkbox" id="agree" />
+                <span>I have read and understood the Privacy & Terms</span>
+              </label>
+            </div>
+          </div>
+
+          <button class="sign">sign up</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

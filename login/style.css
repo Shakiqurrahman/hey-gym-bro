@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bodyBg: #000;
+  --dark-btn: #202020;
+  ---blue-btn: #50d890;
+  --input: #3f3f3f;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bodyBg);
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+.nav_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.5rem;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.menu p {
+  color: #fff;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+/* form  */
+.form {
+  max-width: 400px;
+  width: 100%;
+  margin: 2rem auto;
+  background: var(--dark-btn);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.btn_group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.btn {
+  padding: 0.75rem 0.5rem;
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 20px;
+  font-weight: bold;
+  background: var(--dark-btn);
+  color: #868686;
+}
+
+.active {
+  background: var(---blue-btn);
+  color: #000;
+}
+
+label {
+  display: block;
+  width: 100%;
+  color: #fff;
+  margin-bottom: 0.35rem;
+}
+
+.input_field {
+  width: 100%;
+  padding: 0.65rem 0.5rem;
+  border-radius: 6px;
+  background: var(--bodyBg);
+  outline: none;
+  border: none;
+  color: #ececec;
+}
+
+.input_box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.input_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.content p {
+  color: #9f9e9e;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.checkbox_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #9f9e9e;
+  font-size: 13px;
+}
+
+.sign {
+  width: max-content;
+  margin: 0.5rem auto;
+  border: none;
+  outline: none;
+  background: var(---blue-btn);
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 0.75rem 1.25rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}

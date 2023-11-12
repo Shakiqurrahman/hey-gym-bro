@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bodyBg: #000;
+  --dark-btn: #202020;
+  ---blue-btn: #50d890;
+  --input: #3f3f3f;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bodyBg);
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+.form_title {
+  background: var(--dark-btn);
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 1.2rem 0;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.wrapper {
+  margin: 1rem 0;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 320px 1fr;
+}
+
+.btn {
+  background: var(--dark-btn);
+  padding: 1rem 0rem;
+  color: #fff;
+  border: 1px solid transparent;
+  outline: none;
+  font-size: 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 15rem;
+}
+
+.border {
+  width: 2px;
+  height: 100%;
+  background: var(--input);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btn:hover {
+  border: 1px solid var(---blue-btn);
+}
+
+.btn_group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  position: relative;
+}
+
+.label {
+  display: block;
+  color: #fff;
+  width: 100%;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-bottom: 0.75rem;
+}
+
+.form_input {
+  height: 40px;
+  border-radius: 6px;
+  padding: 1.5rem 0.5rem;
+  outline: none;
+  border: none;
+  background: var(--input);
+  font-size: 20px;
+  width: 100%;
+  color: #fff;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.form_group {
+  margin-bottom: 1rem;
+}
+.form_btn {
+  width: 170px;
+  height: 50px;
+  border-radius: 30px;
+  background: #50d890;
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+/* ----------------------------- */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Style for the select button */
+.select-button {
+  cursor: pointer;
+  padding: 0.75rem 0.5rem;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: var(--input);
+  color: #cecdcd;
+  font-size: 20px;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--input);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 100%;
+}
+
+/* Style for the checkboxes */
+.checkbox-container {
+  padding: 8px;
+  width: 100%;
+}
+
+/* Style for the checkboxes label */
+.checkbox-label {
+  display: block;
+  margin-bottom: 8px;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 20px;
+  color: #fff;
+}
+[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.file {
+  background: var(--input);
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+  border-radius: 6px;
+}
+
+.nav_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.5rem;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.menu p {
+  color: #fff;
+  text-transform: capitalize;
+  cursor: pointer;
+}

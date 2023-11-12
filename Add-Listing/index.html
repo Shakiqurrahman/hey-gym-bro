@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Add Listing</title>
+  </head>
+  <body>
+    <!-- navbar  -->
+    <nav class="nav">
+      <div class="container nav_wrapper">
+        <!-- logo -->
+        <div class="">
+          <img src="../assets/logo.png" alt="" style="width: 100px" />
+        </div>
+
+        <!-- menu  -->
+        <div class="menu">
+          <p>home</p>
+          <img src="../assets/menu.png" alt="" style="width: 30px" />
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div>
+        <div class="form_title">
+          <p class="">add new gym</p>
+        </div>
+
+        <div class="wrapper">
+          <!-- ------------------------------ left side ------------------------------ -->
+          <div class="form_left btn_group">
+            <div class="border"></div>
+            <button class="btn">All listings</button>
+            <button class="btn">add listing</button>
+            <button class="btn">most recent</button>
+          </div>
+
+          <!-- ----------------------------- right side ----------------------------- -->
+          <div class="form_right">
+            <form class="form">
+              <div class="form_group">
+                <label for="name" class="label">First name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Your first names"
+                  class="form_input"
+                />
+              </div>
+              <div class="form_group">
+                <label for="name" class="label">First name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Your first names"
+                  class="form_input"
+                />
+              </div>
+              <div class="form_group">
+                <label for="name" class="label">First name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Your first names"
+                  class="form_input"
+                />
+              </div>
+              <div class="form_group">
+                <label for="name" class="label">First name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Your first names"
+                  class="form_input"
+                />
+              </div>
+
+              <div class="form_group">
+                <div class="dropdown">
+                  <label for="name" class="label">First name</label>
+                  <div class="select-button" onclick="toggleDropdown()">
+                    Select services
+
+                    <img
+                      src="../assets/arrowdown.svg"
+                      alt=""
+                      style="width: 17px"
+                    />
+                  </div>
+
+                  <div class="dropdown-content" id="checkboxContainer">
+                    <div class="checkbox-container">
+                      <label class="checkbox-label"
+                        ><input
+                          type="checkbox"
+                          id="selectAll"
+                          onchange="toggleSelectAll()"
+                        />
+                        Select All</label
+                      >
+                      <label class="checkbox-label"
+                        ><input type="checkbox" value="option1" />24 Access</label
+                      >
+                      <label class="checkbox-label"
+                        ><input type="checkbox" value="option1" />No Contract</label
+                      >
+                      <label class="checkbox-label"
+                        ><input type="checkbox" value="option1" />Classes & Group Exercise</label
+                      >
+                      <label class="checkbox-label"
+                        ><input type="checkbox" value="option1" />Swim/Sauna/Spa</label
+                      >
+                      <label class="checkbox-label"
+                        ><input type="checkbox" value="option1" />Studio and Mat Area</label
+                      >
+                      <label class="checkbox-label"
+                        ><input type="checkbox" value="option1" />Rowing Machine & Treadmills</label
+                      >
+                      <label class="checkbox-label"
+                        ><input type="checkbox" value="option1" />Cafe</label
+                      >
+                      <label class="checkbox-label"
+                        ><input type="checkbox" value="option1" />Cycling Studio</label
+                      >
+                      <label class="checkbox-label"
+                        ><input type="checkbox" value="option1" />Boxing</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form_group">
+                <label for="name" class="label">First name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Your first names"
+                  class="form_input"
+                />
+              </div>
+              <div class="form_group">
+                <label for="name" class="label">First name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Your first names"
+                  class="form_input"
+                />
+              </div>
+              <div class="form_group">
+                <label for="name" class="label">First name</label>
+                <input type="file" id="name" class="file" />
+              </div>
+            </form>
+
+            <button class="form_btn">save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
